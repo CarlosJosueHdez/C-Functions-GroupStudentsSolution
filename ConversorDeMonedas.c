@@ -39,6 +39,12 @@
 	float yuanAPesos (float yuan){
 		return yuan * 0.32;
 			}
+       float RupiaApeso (float rupia){
+	       return rupia*0.26
+	       }
+       float pesoARupia (float pesos){
+	       return pesos/0.26
+	       }
 		//Kevin - Euros
 		//Jose Luis = Libra
 		//Irving = Yen
@@ -159,7 +165,21 @@ int main(int argc, char *argv[]) {
 		printf("Hola Mundo");
 		break;
 		case 8:
-		printf("Hola Mundo");
+			 printf("\n¿Qué tipo de cambio quieres hacer? de rupias a pesos escribe 1 y de pesos a a rupias 2: ");
+				scanf("%i", &opcionTipoDeCambio);
+				
+				if(opcionTipoDeCambio == 1){
+					printf("\nEscribe la cantidad que quieres cambiar: ");
+					scanf("%f", &cantidad);
+					printf("%f rupias son %f pesos. \n", cantidad, RupiasApesos(cantidad));
+				}
+				
+				if(opcionTipoDeCambio == 2){
+					printf("\nEscribe la cantidad que quieres cambiar: ");
+					scanf("%f", &cantidad);
+					printf("%f pesos son %f rupias. \n", cantidad, pesoARupia(cantidad));
+				}
+		
 		break;
 		case 9:
 		                printf("\n¿Qué tipo de cambio quieres hacer? de rublos a pesos escribe 1 y de pesos a a rublos 2: ");
@@ -168,7 +188,7 @@ int main(int argc, char *argv[]) {
 				if(opcionTipoDeCambio == 1){
 					printf("\nEscribe la cantidad que quieres cambiar: ");
 					scanf("%f", &cantidad);
-					printf("%f rublos son %f pesos. \n", cantidad, rublosAPesos(cantidad));
+					printf("%f rublos son %f pesos. \n", cantidad, rublosAPeso(cantidad));
 				}
 				
 				if(opcionTipoDeCambio == 2){
