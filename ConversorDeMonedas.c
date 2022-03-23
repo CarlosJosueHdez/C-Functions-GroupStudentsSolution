@@ -23,6 +23,16 @@
 		return rublos * 0.21;
 			}
 
+	float YenaPeso (float yen){
+	
+		return (yen * 0.17);
+			}
+
+	float PesoaYen (float peso){
+	
+		return (peso*6.00);
+			}
+
 		
 		//Kevin - Euros
 		//Jose Luis = Libra
@@ -100,9 +110,27 @@ int main(int argc, char *argv[]) {
 			
 		printf("Hola Mundo");
 		break;
+			 
 		case 4:
-		printf("Hola Mundo");
+			printf("Para convertir de Yen a Pesos presiona 1 \n");
+			printf("Para convertir de Pesos a Yen presiona 2 \n");
+			scanf("%i", &opcionTipoDeCambio);
+			
+			if(opcionTipoDeCambio == 1){
+				printf("Ingresa la cantidad que quieres cambiar\n");
+				scanf("%f",&cantidad);
+				printf("%f Yenes son %f pesos. \n\n", cantidad, YenaPeso(cantidad));
+			}
+			else if(opcionTipoDeCambio == 2){
+				printf("Ingresa la cantidad de quieres cambiar\n");
+				scanf("%f",&cantidad);
+				printf("%f pesos son %f yenes. \n\n", cantidad, PesoaYen(cantidad));
+			}
+			else{
+				printf("ERROR");
+			} 
 		break;
+			 
 		case 5:
 		printf("Hola Mundo");
 		break;
