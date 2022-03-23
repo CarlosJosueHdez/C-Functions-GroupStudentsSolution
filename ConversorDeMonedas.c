@@ -16,6 +16,12 @@
 	float pesosAlibras( float libras){
 		return libras/27.55;
 		}
+        float pesosARublos(float pesos){
+		return pesos / 0.21;
+		}
+	float rublosAPesos(float rublos){
+		return rublos * 0.21;
+			}
 
 		
 		//Kevin - Euros
@@ -26,6 +32,7 @@
 		//Kai = 
 		//Julio =
 		//CJ =
+                //Gabriel = Rublos
 
 int main(int argc, char *argv[]) {
 	
@@ -33,7 +40,7 @@ int main(int argc, char *argv[]) {
 	float cantidad;
 		
 	 printf("***Conversor de monedas internacionales a pesos mexicanos***\n");
-	 printf("\t \t \t---Menú--- \n");
+	 printf("\t \t \t---MenÃº--- \n");
 	 printf("1 - Dolar y Pesos Mexicanos \n");
 	 printf("2 - Euro y Pesos Mexicanos \n");
 	 printf("3 - Libra y Pesos Mexicanos \n");
@@ -45,14 +52,14 @@ int main(int argc, char *argv[]) {
 	 printf("9 - - y Pesos Mexicanos \n");
 	 printf("0 - Salir \n");
 	 printf("\n");
-	 printf("Selecciona la opción del tipo de cambio que quieras realizar: ");
+	 printf("Selecciona la opciÃ³n del tipo de cambio que quieras realizar: ");
 	 
 	 scanf("%i", &opcionMenu);
 	 
 	 switch(opcionMenu)
 	 {
 		case 1:
-			printf("\n¿Qué tipo de cambio quieres hacer? de dólar a pesos escribe 1 y de pesos a dólares 2: ");
+			printf("\nÂ¿QuÃ© tipo de cambio quieres hacer? de dÃ³lar a pesos escribe 1 y de pesos a dÃ³lares 2: ");
 			scanf("%i", &opcionTipoDeCambio);
 			
 			if(opcionTipoDeCambio == 1){
@@ -109,7 +116,21 @@ int main(int argc, char *argv[]) {
 		printf("Hola Mundo");
 		break;
 		case 9:
-		printf("Hola Mundo");
+		                printf("\nÂ¿QuÃ© tipo de cambio quieres hacer? de rublos a pesos escribe 1 y de pesos a a rublos 2: ");
+				scanf("%i", &opcionTipoDeCambio);
+				
+				if(opcionTipoDeCambio == 1){
+					printf("\nEscribe la cantidad que quieres cambiar: ");
+					scanf("%f", &cantidad);
+					printf("%f rublos son %f pesos. \n", cantidad, rublosAPesos(cantidad));
+				}
+				
+				if(opcionTipoDeCambio == 2){
+					printf("\nEscribe la cantidad que quieres cambiar: ");
+					scanf("%f", &cantidad);
+					printf("%f pesos son %f rublos. \n", cantidad, pesosARublos(cantidad));
+				}
+				break;
 		break;
 		case 0:
 		 printf("\nGracias por usar este conversor :D");
