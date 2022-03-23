@@ -24,7 +24,7 @@ int main(int argc, char *argv[]) {
 	float cantidad;
 		
 	 printf("***Conversor de monedas internacionales a pesos mexicanos***\n");
-	 printf("\t \t \t---Menú--- \n");
+	 printf("\t \t \t---MenÃº--- \n");
 	 printf("1 - Dolar y Pesos Mexicanos \n");
 	 printf("2 - Euro y Pesos Mexicanos \n");
 	 printf("3 - Libra y Pesos Mexicanos \n");
@@ -36,14 +36,14 @@ int main(int argc, char *argv[]) {
 	 printf("9 - - y Pesos Mexicanos \n");
 	 printf("0 - Salir \n");
 	 printf("\n");
-	 printf("Selecciona la opción del tipo de cambio que quieras realizar: ");
+	 printf("Selecciona la opciÃ³n del tipo de cambio que quieras realizar: ");
 	 
 	 scanf("%i", &opcionMenu);
 	 
 	 switch(opcionMenu)
 	 {
 		case 1:
-			printf("\n¿Qué tipo de cambio quieres hacer? de dólar a pesos escribe 1 y de pesos a dólares 2: ");
+			printf("\nÂ¿QuÃ© tipo de cambio quieres hacer? de dÃ³lar a pesos escribe 1 y de pesos a dÃ³lares 2: ");
 			scanf("%i", &opcionTipoDeCambio);
 			
 			if(opcionTipoDeCambio == 1){
@@ -58,7 +58,30 @@ int main(int argc, char *argv[]) {
 				printf("%f pesos son %f dolares. \n", cantidad, pesosADolares(cantidad));
 			}
 		break;
-		
+		case 2:
+		printf("Hola Mundo");
+		break;
+		case 3:
+		printf("Hola Mundo");
+		break;
+		case 4:
+		printf("Hola Mundo");
+		break;
+		case 5:
+		printf("Hola Mundo");
+		break;
+		case 6:
+		printf("Hola Mundo");
+		break;
+		case 7:
+		printf("Hola Mundo");
+		break;
+		case 8:
+		printf("Hola Mundo");
+		break;
+		case 9:
+		printf("Hola Mundo");
+		break;
 		case 0:
 		 printf("\nGracias por usar este conversor :D");
 		 break;
