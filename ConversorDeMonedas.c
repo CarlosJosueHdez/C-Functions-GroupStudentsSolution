@@ -2,11 +2,11 @@
 
 	//Funciones
 	float pesosADolares(float pesos){
-	return pesos / 20.95; //ingresar $50 pesos y retorne = 2.38
+	return pesos / 20.95;
 	}
 	
 	float dolaresAPesos(float dolares){
-		return dolares * 20.95; //ingresar $50 pesos y retorne = 1047.5
+		return dolares * 20.95;
 	}
 		
 		//Kevin - Euros
