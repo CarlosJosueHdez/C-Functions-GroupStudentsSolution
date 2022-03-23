@@ -40,11 +40,11 @@
 		return yuan * 0.32;
 			}
        float RupiaApeso (float rupia){
-	       return rupia*0.26
-	       }
-       float pesoARupia (float pesos){
-	       return pesos/0.26
-	       }
+		return rupia*0.26;
+	}
+	float pesoARupia (float pesos){
+	return pesos/0.26;
+	}
 		//Kevin - Euros
 		//Jose Luis = Libra
 		//Irving = Yen
@@ -188,7 +188,7 @@ int main(int argc, char *argv[]) {
 				if(opcionTipoDeCambio == 1){
 					printf("\nEscribe la cantidad que quieres cambiar: ");
 					scanf("%f", &cantidad);
-					printf("%f rublos son %f pesos. \n", cantidad, rublosAPeso(cantidad));
+					printf("%f rublos son %f pesos. \n", cantidad, rublosAPesos(cantidad));
 				}
 				
 				if(opcionTipoDeCambio == 2){
