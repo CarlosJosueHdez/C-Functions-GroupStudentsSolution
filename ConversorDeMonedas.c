@@ -39,7 +39,7 @@
 	float yuanAPesos (float yuan){
 		return yuan * 0.32;
 			}
-       float RupiaApeso (float rupia){
+       float RupiasApesos (float rupia){
 		return rupia*0.26;
 	}
 	float pesoARupia (float pesos){
