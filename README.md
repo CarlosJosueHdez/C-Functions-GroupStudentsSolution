@@ -11,3 +11,6 @@ Con este conversor podemos convertir el Peso Méxicano a Libras. Actualmente sie
 
 ## Conversor de Yen a Pesos y su inversa de Pesos a Yen
 Por medio del siguiente conversor se agrego la conversión entre el Yen a Pesos Mexicanos y la inversa del mismo. Actualmente el Yen se encuentra en $0.17 MXN.
+
+## Conversor de Chelín a Pesos y Pesos a Chelín
+Podemos convertir chelines a pesos y pesos a chelines.
