@@ -45,6 +45,12 @@
 	float pesoARupia (float pesos){
 	return pesos/0.26;
 	}
+        float chelinApesos (float chelin){
+		return chelin*5.68;
+	}
+        float pesosAchelin (float pesos){
+		return pesos*0.18;
+	}
 		//Kevin - Euros
 		//Jose Luis = Libra
 		//Irving = Yen
@@ -52,7 +58,7 @@
 		//Rayma = Won
 		//Kai = 
 		//Julio =
-		//CJ =
+		//CJ =Chelín
                 //Gabriel = Rublos
 
 int main(int argc, char *argv[]) {
@@ -197,6 +203,22 @@ int main(int argc, char *argv[]) {
 					printf("%f pesos son %f rublos. \n", cantidad, pesosARublos(cantidad));
 				}
 				break;
+		break;
+		case 10:
+			printf("\n¿Qué tipo de cambio quieres hacer? de dólar a pesos escribe 1 y de pesos a dólares 2: ");
+			scanf("%i", &opcionTipoDeCambio);
+			
+			if(opcionTipoDeCambio == 1){
+				printf("\nEscribe la cantidad que quieres cambiar: ");
+				scanf("%f", &cantidad);
+				printf("%f dolares son %f pesos. \n", cantidad, chelinApesos(cantidad));
+			}
+			
+			if(opcionTipoDeCambio == 2){
+				printf("\nEscribe la cantidad que quieres cambiar: ");
+				scanf("%f", &cantidad);
+				printf("%f pesos son %f chelin. \n", cantidad, pesosAchelin(cantidad));
+			}
 		break;
 		case 0:
 		 printf("\nGracias por usar este conversor :D");
