@@ -8,3 +8,6 @@ Con este conversor podemos convertir nuestra moneda, el peso mexicano al Rublo R
 
 ## Conversor de Pesos a Libras y Libras a Pesos
 Con este conversor podemos convertir el Peso Méxicano a Libras. Actualmente siendo 23/03/2022 la Libra equivale a $ 27.55
+
+## Conversor de Yen a Pesos y su inversa de Pesos a Yen
+Por medio del siguiente conversor se agrego la conversión entre el Yen a Pesos Mexicanos y la inversa del mismo. Actualmente el Yen se encuentra en $0.17 MXN.
